@@ -24049,7 +24049,7 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 60px);
-  background: #ec37fc;
+  background: #4a91dc;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   padding: 0;
@@ -24101,7 +24101,8 @@ dl li {
   transition-property: background;
   -webkit-transition-property: background;
   font-weight: bold;
-  border-top: 1px solid rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 4px;
 }
 
 .sidebar .nav .nav-item .nav-link i {
@@ -24171,7 +24172,7 @@ dl li {
 
 .sidebar .nav .nav-item .nav-link[aria-expanded="true"] {
   background: rgba(255, 255, 255, 0.4);
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
   border-radius: 4px;
 }
 
@@ -24201,11 +24202,11 @@ dl li {
 }
 
 .sidebar .nav .nav-item.active+.nav-item .nav-link {
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
 }
 
 .sidebar .nav .nav-item:first-child .nav-link {
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
 }
 
 .sidebar .nav:not(.sub-menu) {
@@ -24220,7 +24221,7 @@ dl li {
   background: rgba(255, 255, 255, 0.4);
   color: #fff;
   border-radius: 4px;
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
 }
 
 .sidebar .nav:not(.sub-menu)>.nav-item:hover>.nav-link i.menu-arrow {
@@ -24232,7 +24233,7 @@ dl li {
 }
 
 .sidebar .nav:not(.sub-menu)>.nav-item:hover+.nav-item .nav-link {
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
 }
 
 .sidebar .nav.sub-menu {
@@ -24256,7 +24257,7 @@ dl li {
   font-size: 0.875rem;
   line-height: 1;
   height: auto;
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
   margin: 0;
 }
 
@@ -24290,7 +24291,7 @@ dl li {
 }
 
 .sidebar .nav.sub-menu .nav-item:first-child .nav-link {
-  border-top: 1px solid #ec37fc;
+  /* border-top: 1px solid #ec37fc; */
 }
 
 .sidebar .user-profile {
@@ -24342,7 +24343,7 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper {
-  background: #ec37fc;
+  background: #4a91dc;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
