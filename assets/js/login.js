@@ -32,7 +32,7 @@ function checkNIK() {
         setTimeout(removeAnimate, 500);
     } else if (countNIK == 16) {
         $.ajax({
-            url: "masuk/cek-nik",
+            url: "cek-nik",
             method: "POST",
             data: "nik=" + nik,
             dataType: "JSON",
@@ -63,3 +63,40 @@ function checkAnimate() {
 }
 
 setInterval(checkAnimate);
+
+$(function () {
+    $('#login').submit(function (e) {
+        e.preventDefault();
+
+        $("#btn").button('loading');
+        document.getElementById("notif").innerHTML = "<div class='alert alert-info'>Sedang Login...</div>";
+
+        var data = $(this).serialize();
+
+        $.ajax({
+            url: $(this).attr("action"),
+            method: $(this).attr("method"),
+            data: data,
+            dataType: "JSON",
+            success: function (response) {
+                if (response.status == "success") {
+                    $("#btn").button('reset');
+
+                    document.getElementById("notif").innerHTML = "<div class='alert alert-success' id='notifBerhasil'></div>";
+                    document.getElementById("notifBerhasil").innerHTML = response.msg;
+
+                } else if (response.status == "failed") {
+                    $("#btn").button('reset');
+
+                    document.getElementById("notif").innerHTML = "<div class='alert alert-danger' id='notifGagal'></div>";
+                    document.getElementById("notifGagal").innerHTML = response.msg;
+                }
+            },
+            error: function () {
+                $("#btn").button('reset');
+
+                document.getElementById("notif").innerHTML = "<div class='alert alert-danger'>Terjadi masalah saat login, silahkan coba lagi.</div>";
+            }
+        })
+    })
+})
