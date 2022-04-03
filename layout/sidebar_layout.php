@@ -17,19 +17,19 @@
                 <span class="menu-title">Home</span>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mt-2">
             <a class="nav-link" href="catatan-perjalanan">
                 <i class="fa fa-book menu-icon"></i>
                 <span class="menu-title">Catatan Perjalanan</span>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mt-2">
             <a class="nav-link" href="tambah-catatan">
                 <i class="fa fa-plus-square menu-icon"></i>
                 <span class="menu-title">Tambah Catatan</span>
             </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mt-4">
             <a class="nav-link" href="keluar">
                 <i class="fa fa-sign-out menu-icon"></i>
                 <span class="menu-title">Keluar</span>
