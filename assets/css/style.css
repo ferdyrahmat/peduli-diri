@@ -23453,7 +23453,7 @@ dl li {
 .table thead th {
   border-top: 0;
   border-bottom-width: 1px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1rem;
 }
 
