@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['IsLogged'])) {
-    header("location: dashboard");
+    header("location: home");
 }
 
 ?>
