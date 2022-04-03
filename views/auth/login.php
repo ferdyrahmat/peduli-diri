@@ -8,9 +8,9 @@
                             <img src="assets/images/logo-dark.svg" alt="logo">
                         </div>
                         <h6 class="font-weight-light text-center">Sign in to continue.</h6>
-                        <form class="pt-3">
+                        <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onwheel="this.blur()" autocomplete="off">
+                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onwheel="this.blur()" autocomplete="off" autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-lg" name="nama" id="nama" placeholder="Nama Lengkap" readonly>
