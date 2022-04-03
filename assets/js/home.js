@@ -1,4 +1,4 @@
-document.title = "PeduliDiri";
+document.title = "PeduliDiri | Home";
 
 var instance = $('#loadDataHome').scheletrone({
     url: "data-home",
