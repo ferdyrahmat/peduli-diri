@@ -9,6 +9,8 @@
                         </div>
                         <h6 class="font-weight-light text-center">Sign in to continue.</h6>
                         <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
+                            <div id="notif">
+                            </div>
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onwheel="this.blur()" autocomplete="off" autofocus>
                             </div>
@@ -16,7 +18,7 @@
                                 <input type="text" class="form-control form-control-lg" name="nama" id="nama" placeholder="Nama Lengkap" readonly>
                             </div>
                             <div class="mt-3">
-                                <button type="submit" class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" id="btn">Masuk</button>
+                                <button type="submit" class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" id="btn" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Harap Tunggu">Masuk</button>
                             </div>
                         </form>
                         <div class="text-center mt-4 font-weight-light">
