@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Regal Admin</title>
+    <title>PeduliDiri</title>
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="assets/vendors/base/vendor.bundle.base.css">
@@ -13,6 +17,9 @@
     <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendors/jquery-bar-rating/fontawesome-stars-o.css">
     <link rel="stylesheet" href="assets/vendors/jquery-bar-rating/fontawesome-stars.css">
+    <link rel="stylesheet" href="assets/vendors/jquery.skeleton.loader/dist/jquery.skeleton.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" />
 </head>
@@ -40,6 +47,16 @@
     <script src="assets/vendors/chart.js/Chart.min.js"></script>
     <script src="assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
+    <script src="assets/vendors/jquery.skeleton.loader/dist/jquery.scheletrone.js"></script>
+    <?php
+    if ($_GET['page'] == 'home') { ?>
+        <script src="assets/js/home.js"></script>
+    <?php
+    } else if ($_GET['page'] == 'catatan-perjalanan') { ?>
+        <script src="assets/js/travel-log.js"></script>
+    <?php
+    }
+    ?>
 </body>
 
 </html>
