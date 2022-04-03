@@ -19,6 +19,7 @@ session_start();
     <link rel="stylesheet" href="assets/vendors/jquery-bar-rating/fontawesome-stars.css">
     <link rel="stylesheet" href="assets/vendors/jquery.skeleton.loader/dist/jquery.skeleton.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/vendors/DataTables/css/dataTables.bootstrap4.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" />
@@ -48,6 +49,9 @@ session_start();
     <script src="assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="assets/vendors/jquery.skeleton.loader/dist/jquery.scheletrone.js"></script>
+    <script src="assets/vendors/DataTables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/vendors/DataTables/js/dataTables.bootstrap4.min.js"></script>
+
     <?php
     if ($_GET['page'] == 'home') { ?>
         <script src="assets/js/home.js"></script>
