@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if (isset($_SESSION['IsLogged'])) {
+    header("location: dashboard");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +17,8 @@
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="assets/vendors/base/vendor.bundle.base.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/favicon.png" />
 </head>
@@ -19,6 +29,10 @@
     switch ($_GET['page']) {
         case 'masuk':
             include "login.php";
+            break;
+
+        case 'daftar':
+            include "register.php";
             break;
 
         default:
@@ -32,6 +46,7 @@
     <script src="assets/js/off-canvas.js"></script>
     <script src="assets/js/hoverable-collapse.js"></script>
     <script src="assets/js/template.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <?php
 
