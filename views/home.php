@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="row mt-2" id="loadDataHome">
+    <div class="row" id="loadDataHome">
         <div class="col-xl-3 flex-column d-flex grid-margin stretch-card">
             <div class="row flex-grow">
                 <div class="col-sm-12 grid-margin stretch-card">
@@ -49,7 +49,7 @@
         </div>
         <div class="col-xl-9 d-flex grid-margin stretch-card">
             <div class="card">
-                <div class="card-body" style="border-radius: 20px;">
+                <div class="card-body" style="border-radius: 10px;">
 
                 </div>
             </div>
