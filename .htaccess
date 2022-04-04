@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ErrorDocument 404 masuk
+
+RewriteRule ^masuk$ views/auth/index.php?page=masuk [L]
+RewriteRule ^cek-nik$ function/Check.php [L]
+RewriteRule ^proses-masuk$ function/Login.php [L]
+
+RewriteRule ^daftar$ views/auth/index.php?page=daftar [L]
+RewriteRule ^menu$ menu.php [L]
+
+RewriteRule ^home$ main.php?page=home [L]
+RewriteRule ^catatan-perjalanan$ main.php?page=catatan-perjalanan [L]
+RewriteRule ^tambah-catatan$ main.php?page=tambah-catatan [L]
+
+RewriteRule ^proses-tambah-catatan$ function/Insert.php [L]
+RewriteRule ^proses-edit-catatan$ function/Update.php [L]
+
+RewriteRule ^keluar logout.php [L]
+RewriteRule ^data-home$ views/data/data_home.php [L]
+RewriteRule ^data-travel$ views/data/data_travel.php [L]
+
+</IfModule>
