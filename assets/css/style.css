@@ -23961,7 +23961,9 @@ dl li {
 }
 
 .auth .brand-logo img {
-  width: 115px;
+  width: 100px;
+  margin-top: -20px;
+  margin-bottom: -10px;
 }
 
 .auth form .form-group {
