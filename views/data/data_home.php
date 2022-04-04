@@ -20,7 +20,7 @@
 </div>
 <div class="col-xl-9 d-flex grid-margin stretch-card">
     <div class="card">
-        <div class="card-body animated fadeIn" style="background-image: url('assets/images/travel.jpg'); background-size: cover; border-radius: 20px; background-position: center;">
+        <div class="card-body animated fadeIn" style="background-image: url('assets/images/travel.jpg'); background-size: cover; border-radius: 10px; background-position: center;">
         </div>
     </div>
 </div>
