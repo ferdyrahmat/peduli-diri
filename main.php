@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if (empty($_SESSION['IsLogged'])) {
+    header("location: masuk");
+}
 ?>
 
 <!DOCTYPE html>
