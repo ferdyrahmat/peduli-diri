@@ -26,7 +26,7 @@ if (empty($_SESSION['IsLogged'])) {
     <link rel="stylesheet" href="assets/vendors/DataTables/css/dataTables.bootstrap4.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
 </head>
 
 <body>
@@ -55,6 +55,18 @@ if (empty($_SESSION['IsLogged'])) {
     <script src="assets/vendors/jquery.skeleton.loader/dist/jquery.scheletrone.js"></script>
     <script src="assets/vendors/DataTables/js/jquery.dataTables.min.js"></script>
     <script src="assets/vendors/DataTables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://mattboldt.github.io/typed.js/lib/typed.js"></script>
+
+    <script>
+        var typed = new Typed('#infoText', {
+            strings: ["Gunakan Masker.", "Patuhi Protokol Kesehatan."],
+            typeSpeed: 100,
+            backDelay: 1000,
+            startDelay: 500,
+            backSpeed: 100,
+            loop: true,
+        });
+    </script>
 
     <?php
     if ($_GET['page'] == 'home') { ?>
