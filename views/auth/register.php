@@ -3,11 +3,11 @@
         <div class="content-wrapper d-flex align-items-center auth px-0">
             <div class="row w-100 mx-0">
                 <div class="col-lg-4 mx-auto">
-                    <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+                    <div class="auth-form-light text-center py-5 px-4 px-sm-5">
                         <div class="brand-logo">
-                            <img src="assets/images/logo-dark.svg" alt="logo">
+                            <img src="assets/images/pedulidiri-auth.png" alt="logo" style="margin-top: -20px; margin-bottom: -10px;">
                         </div>
-                        <h6 class="font-weight-light text-center">Signing up is easy. It only takes a few steps</h6>
+                        <h5 class="font-weight-light text-center">Daftar | PeduliDiri</h5>
                         <form class="pt-3" action="proses-daftar" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" autocomplete="off" autofocus>
