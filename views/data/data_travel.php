@@ -47,8 +47,9 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form class="forms-sample" method="POST" action="" enctype="multipart/form-data">
+                            <form class="forms-sample" method="POST" action="proses-edit-catatan" enctype="multipart/form-data">
                                 <div class="modal-body">
+                                    <input type="hidden" name="id_catatan" value="<?= $pd['0']; ?>">
                                     <div class="form-group">
                                         <label for="">Tanggal</label>
                                         <input type="date" name="tanggal" id="" class="form-control" value="<?= $pd['2'] ?>">
