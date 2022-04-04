@@ -25093,7 +25093,7 @@ dl li {
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    background: #b10dbf;
+    background: #34679d;
     padding: 0 1.4rem;
     left: 70px;
     position: absolute;
@@ -25118,7 +25118,7 @@ dl li {
   }
 
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
-    background: #b10dbf;
+    background: #34679d;
   }
 
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse,
