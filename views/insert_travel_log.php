@@ -8,22 +8,22 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <form class="forms-sample" method="POST" action="proses-tambah-catatan" enctype="multipart/form-data">
+                    <form class="forms-sample" method="POST" action="proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
                             <label for="tanggal">Tanggal</label>
-                            <input type="date" class="form-control" id="tanggal" name="tanggal" autocomplete="off">
+                            <input type="date" class="form-control" id="tanggal" name="tanggal" autocomplete="off" required>
                         </div>
                         <div class="form-group">
                             <label for="jam">Jam</label>
-                            <input type="time" class="form-control" id="jam" name="jam" autocomplete="off">
+                            <input type="time" class="form-control" id="jam" name="jam" autocomplete="off" required>
                         </div>
                         <div class="form-group">
                             <label for="lokasi">Lokasi</label>
-                            <input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="Masukan Lokasi" autocomplete="off">
+                            <input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="Masukan Lokasi" autocomplete="off" required>
                         </div>
                         <div class="form-group">
                             <label for="suhu">Suhu</label>
-                            <input type="number" class="form-control" id="suhu" name="suhu" placeholder="Masukan Suhu" autocomplete="off">
+                            <input type="number" class="form-control" id="suhu" name="suhu" placeholder="Masukan Suhu" autocomplete="off" required>
                         </div>
                         <button type="submit" class="btn btn-info btn-block">Simpan Catatan</button>
                     </form>
