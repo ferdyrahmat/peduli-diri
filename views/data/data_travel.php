@@ -29,52 +29,14 @@
                     <td><?= $pd['4']; ?></td>
                     <td><?= $pd['5']; ?></td>
                     <td>
-                        <a href="#" class="btn btn-info btn-sm" data-target="#editModal<?= $pd['0'] ?>" data-toggle="modal">
+                        <a href="edit-catatan/<?= $pd['0'] ?>" class="btn btn-info btn-sm">
                             <i class="fa fa-edit"></i>
                         </a>
-                        <a href="" class="btn btn-danger btn-sm">
+                        <a href="hapus-catatan/<?= $pd['0'] ?>" class="btn btn-danger btn-sm hapus-catatan">
                             <i class="fa fa-trash"></i>
                         </a>
                     </td>
                 </tr>
-
-                <div class="modal fade" id="editModal<?= $pd['0'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Edit Catatan Perjalanan</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <form class="forms-sample" method="POST" action="proses-edit-catatan" enctype="multipart/form-data">
-                                <div class="modal-body">
-                                    <input type="hidden" name="id_catatan" value="<?= $pd['0']; ?>">
-                                    <div class="form-group">
-                                        <label for="">Tanggal</label>
-                                        <input type="date" name="tanggal" id="" class="form-control" value="<?= $pd['2'] ?>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Jam</label>
-                                        <input type="time" name="jam" id="" class="form-control" value="<?= $pd['3'] ?>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Lokasi</label>
-                                        <input type="text" name="lokasi" id="" class="form-control" placeholder="Masukan Lokasi" value="<?= $pd['4'] ?>">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Suhu</label>
-                                        <input type="text" name="suhu" id="" class="form-control" placeholder="Masukan Suhu" value="<?= $pd['5'] ?>">
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-info btn-block">Simpan Perubahan</button>
-                                    <!-- <button type="button" class="btn btn-danger btn-block" data-dismiss="modal">Batal</button> -->
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
         <?php
             }
         }
@@ -82,8 +44,11 @@
     </tbody>
 </table>
 
+
 <script>
     $(document).ready(function() {
         $('#dataTravel').DataTable();
     });
 </script>
+
+<script src="http://localhost/peduli-diri-native/assets/js/delete.js"></script>
