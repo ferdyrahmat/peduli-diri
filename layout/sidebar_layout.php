@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="user-profile">
         <div class="user-image">
-            <img src="assets/images/default-user-icon.jpg">
+            <img src="http://localhost/peduli-diri-native/assets/images/default-user-icon.jpg">
         </div>
         <div class="user-name">
             <?= $_SESSION['nama']; ?>
@@ -12,49 +12,30 @@
     </div>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="home">
+            <a class="nav-link" href="http://localhost/peduli-diri-native/home">
                 <i class="fa fa-home menu-icon"></i>
                 <span class="menu-title">Home</span>
             </a>
         </li>
-        <li class="nav-item mt-2">
-            <a class="nav-link" href="catatan-perjalanan">
+        <li class="nav-item mt-2 <?php if ($_GET['page'] == 'edit-catatan') {
+                                        echo "active";
+                                    } ?>">
+            <a class="nav-link" href="http://localhost/peduli-diri-native/catatan-perjalanan">
                 <i class="fa fa-book menu-icon"></i>
                 <span class="menu-title">Catatan Perjalanan</span>
             </a>
         </li>
         <li class="nav-item mt-2">
-            <a class="nav-link" href="tambah-catatan">
+            <a class="nav-link" href="http://localhost/peduli-diri-native/tambah-catatan">
                 <i class="fa fa-plus-square menu-icon"></i>
                 <span class="menu-title">Tambah Catatan</span>
             </a>
         </li>
         <li class="nav-item mt-4">
-            <a class="nav-link" href="#" data-target="#logoutModal" data-toggle="modal">
+            <a class="nav-link" href="keluar" id="logout">
                 <i class="fa fa-sign-out menu-icon"></i>
                 <span class="menu-title">Keluar</span>
             </a>
         </li>
     </ul>
 </nav>
-
-<!-- Modal Logout -->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button> -->
-            </div>
-            <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                <a href="keluar" class="btn btn-danger">Logout</a>
-            </div>
-        </div>
-    </div>
-</div>
