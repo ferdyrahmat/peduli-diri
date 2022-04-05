@@ -1,7 +1,7 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="home"><img src="assets/images/pedulidiri.png" alt="logo" style="margin-top: 6px;" /></a>
-        <a class="navbar-brand brand-logo-mini" href="home"><img src="assets/images/pedulidiri-mini.png" alt="logo" /></a>
+        <a class="navbar-brand brand-logo" href="home"><img src="http://localhost/peduli-diri-native/assets/images/pedulidiri.png" alt="logo" style="margin-top: 6px;" /></a>
+        <a class="navbar-brand brand-logo-mini" href="home"><img src="http://localhost/peduli-diri-native/assets/images/pedulidiri-mini.png" alt="logo" /></a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -22,8 +22,50 @@
         <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item dropdown d-flex mr-4">
                 <?php
-                function tanggal($tanggal)
+                function hari()
                 {
+                    $hari = date('D');
+
+                    switch ($hari) {
+                        case 'Sun':
+                            $hari_ini = "Minggu";
+                            break;
+
+                        case 'Mon':
+                            $hari_ini = "Senin";
+                            break;
+
+                        case 'Tue':
+                            $hari_ini = "Selasa";
+                            break;
+
+                        case 'Wed':
+                            $hari_ini = "Rabu";
+                            break;
+
+                        case 'Thu':
+                            $hari_ini = "Kamis";
+                            break;
+
+                        case 'Fri':
+                            $hari_ini = "Jum'at";
+                            break;
+
+                        case 'Sat':
+                            $hari_ini = "Sabtu";
+                            break;
+
+                        default:
+                            $hari_ini = "Hari tidak diketahui";
+                            break;
+                    }
+                    return $hari_ini;
+                }
+
+                function tanggal()
+                {
+                    $tanggal = date('d-m-Y');
+
                     $bulan = array(
                         1 =>   'Januari',
                         'Februari',
@@ -40,10 +82,10 @@
                     );
                     $pecahkan = explode('-', $tanggal);
 
-                    return $pecahkan[2] . ' ' . $bulan[(int)$pecahkan[1]] . ' ' . $pecahkan[0];
+                    return $pecahkan[0] . ' ' . $bulan[(int)$pecahkan[1]] . ' ' . $pecahkan[2];
                 }
 
-                echo tanggal(date('Y-m-d'));
+                echo hari() . ", " . tanggal();
                 ?>
             </li>
         </ul>
