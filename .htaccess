@@ -10,13 +10,16 @@ RewriteRule ^daftar$ views/auth/index.php?page=daftar [L]
 RewriteRule ^menu$ menu.php [L]
 
 RewriteRule ^home$ main.php?page=home [L]
+
 RewriteRule ^catatan-perjalanan$ main.php?page=catatan-perjalanan [L]
 RewriteRule ^tambah-catatan$ main.php?page=tambah-catatan [L]
-
+RewriteRule ^edit-catatan/(.*)$ main.php?page=edit-catatan&id=$1 [L]
 RewriteRule ^proses-tambah-catatan$ function/Insert.php [L]
 RewriteRule ^proses-edit-catatan$ function/Update.php [L]
+RewriteRule ^hapus-catatan/(.*)$ function/Delete.php?id=$1 [L]
 
-RewriteRule ^keluar logout.php [L]
+
+RewriteRule ^keluar$ logout.php [L]
 RewriteRule ^data-home$ views/data/data_home.php [L]
 RewriteRule ^data-travel$ views/data/data_travel.php [L]
 
