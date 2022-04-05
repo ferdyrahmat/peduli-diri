@@ -28,6 +28,10 @@ foreach ($db as $value) {
     }
 }
 
-echo "<script>alert('Catatan perjalanan berhasil diubah!');
-    location.href='catatan-perjalanan';
-</script>";
+$response = [
+    'status'    => 'success',
+    'msg'       => 'Catatan perjalanan berhasil di ubah',
+    'redirect'  => '../catatan-perjalanan'
+];
+
+echo json_encode($response);
