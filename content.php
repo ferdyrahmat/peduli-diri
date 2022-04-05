@@ -13,6 +13,10 @@ switch ($_GET['page']) {
         include "views/insert_travel_log.php";
         break;
 
+    case 'edit-catatan':
+        include "views/update_travel_log.php";
+        break;
+
     default:
         # code...
         break;
