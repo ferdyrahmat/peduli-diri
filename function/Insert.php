@@ -13,11 +13,14 @@ $file = "../database/catatan_perjalanan.txt";
 $fh = fopen($file, "a");
 $db = file($file, FILE_IGNORE_NEW_LINES);
 
-$count = count($db);
-if ($count == 0) {
+if (trim(file_get_contents($file)) == '') {
     $id = 1;
-} else {
-    $id = $count + 1;
+}
+
+foreach ($db as $value) {
+    $pd = explode("|", $value);
+
+    $id = $pd['0'] + 1;
 }
 
 $data = $id . "|" . $nik . "|" . $tanggal . "|" . $jam . "|" . $lokasi . "|" . $suhu . "\n";
@@ -25,6 +28,10 @@ $data = $id . "|" . $nik . "|" . $tanggal . "|" . $jam . "|" . $lokasi . "|" . $
 fwrite($fh, $data);
 fclose($fh);
 
-echo "<script>alert('Catatan perjalanan berhasil disimpan!');
-    location.href='catatan-perjalanan';
-</script>";
+$response = [
+    'status'    => 'success',
+    'msg'       => 'Catatan berhasil ditambahkan!',
+    'redirect'  => 'catatan-perjalanan'
+];
+
+echo json_encode($response);
