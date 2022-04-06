@@ -7,10 +7,10 @@
                         <div class="brand-logo">
                             <img src="assets/images/pedulidiri-auth.png" alt="logo" style="margin-top: -20px; margin-bottom: -10px;">
                         </div>
-                        <h5 class="font-weight-light text-center">Daftar | PeduliDiri</h5>
+                        <h5 class="font-weight-light text-center">Daftar - PeduliDiri</h5>
                         <form class="pt-3" action="proses-daftar" method="POST" enctype="multipart/form-data" id="register">
                             <div class="form-group">
-                                <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" required autofocus>
+                                <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-lg" name="nama" id="namareg" placeholder="Nama Lengkap" autocomplete="off" required>
