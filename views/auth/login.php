@@ -12,7 +12,7 @@
                             <div id="notif">
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onwheel="this.blur()" autocomplete="off" autofocus>
+                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onwheel="this.blur()" autocomplete="off" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-lg" name="nama" id="nama" placeholder="Nama Lengkap" readonly>
