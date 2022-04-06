@@ -57,18 +57,8 @@ if (empty($_SESSION['IsLogged'])) {
     <script src="http://localhost/peduli-diri-native/assets/vendors/DataTables/js/dataTables.bootstrap4.min.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/vendors/sweetalert2/package/dist/sweetalert2.all.min.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/js/logout.js"></script>
-    <script src="https://mattboldt.github.io/typed.js/lib/typed.js"></script>
-
-    <script>
-        var typed = new Typed('#infoText', {
-            strings: ["PeduliDiri", "Jaga diri Anda dan Keluarga dari Virus Corona (Covid-19)", "Disipilin Menerapkan 3M", "Memakai Masker", "Menjaga Jarak", "Mencuci Tangan", "#Stay Safe and Healthy", "#Indonesia Bisa", "#Indonesia Kuat"],
-            typeSpeed: 50,
-            backDelay: 1000,
-            // startDelay: 500,
-            backSpeed: 50,
-            loop: true,
-        });
-    </script>
+    <script src="http://localhost/peduli-diri-native/assets/vendors/typed.js/lib/typed.js"></script>
+    <script src="http://localhost/peduli-diri-native/assets/js/app.js"></script>
 
     <?php
     if ($_GET['page'] == 'home') { ?>
