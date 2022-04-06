@@ -45,6 +45,7 @@ function checkNIK() {
                     $('#btn').attr("disabled", false);
 
                     document.getElementById("nama").style.display = "block";
+                    document.getElementById("nama").focus();
                     document.getElementById("nama").classList.add('animated', 'fadeInUp');
 
                     document.getElementById("nama").value = response.nama;
