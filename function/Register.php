@@ -12,7 +12,7 @@ foreach ($db as $data) {
     }
 }
 
-if ($cek) {
+if (isset($cek)) {
     $response = [
         'status'    => 'failed',
         'msg'       => 'NIK yang anda gunakan telah terdaftar',
