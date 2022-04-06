@@ -20,6 +20,7 @@ if (isset($_SESSION['IsLogged'])) {
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/animate.min.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/vendors/toastr/build/toastr.min.css">
     <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/favicon.png" />
 </head>
 
@@ -47,6 +48,7 @@ if (isset($_SESSION['IsLogged'])) {
     <script src="http://localhost/peduli-diri-native/assets/js/hoverable-collapse.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/js/template.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/js/bootstrap.min.js"></script>
+    <script src="http://localhost/peduli-diri-native/assets/vendors/toastr/build/toastr.min.js"></script>
 
     <?php
 
