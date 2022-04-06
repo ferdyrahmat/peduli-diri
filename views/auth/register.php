@@ -8,15 +8,15 @@
                             <img src="assets/images/pedulidiri-auth.png" alt="logo" style="margin-top: -20px; margin-bottom: -10px;">
                         </div>
                         <h5 class="font-weight-light text-center">Daftar | PeduliDiri</h5>
-                        <form class="pt-3" action="proses-daftar" method="POST" enctype="multipart/form-data">
+                        <form class="pt-3" action="proses-daftar" method="POST" enctype="multipart/form-data" id="register">
                             <div class="form-group">
-                                <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" autocomplete="off" autofocus>
+                                <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" autocomplete="off" onKeyPress="if(this.value.length==16) return false;" required autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control form-control-lg" name="nama" id="namareg" placeholder="Nama Lengkap">
+                                <input type="text" class="form-control form-control-lg" name="nama" id="namareg" placeholder="Nama Lengkap" autocomplete="off" required>
                             </div>
                             <div class="mt-3">
-                                <button class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn">Daftar</button>
+                                <button class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" id="btn" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Harap Tunggu">Daftar</button>
                             </div>
                             <div class="text-center mt-4 font-weight-light">
                                 Sudah mempunyai akun ? <a href="masuk" class="text-info">Masuk Sekarang</a>
