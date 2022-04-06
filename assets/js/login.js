@@ -73,7 +73,11 @@ $(function () {
         e.preventDefault();
 
         $("#btn").button('loading');
-        document.getElementById("notif").innerHTML = "<div class='alert alert-info'>Sedang Login...</div>";
+
+        toastr.info('Sedang Login...', '', {
+            timeOut: 2000,
+            preventDuplicates: true
+        });
 
         var data = $(this).serialize();
 
@@ -84,22 +88,33 @@ $(function () {
             dataType: "JSON",
             success: function (response) {
                 if (response.status == "success") {
-                    $("#btn").button('reset');
 
-                    document.getElementById("notif").innerHTML = "<div class='alert alert-success' id='notifBerhasil'></div>";
-                    document.getElementById("notifBerhasil").innerHTML = response.msg;
+                    toastr.info(response.msg, '', {
+                        timeOut: 3000,
+                        preventDuplicates: true,
+                        progressBar: true,
+
+                        onHidden: function () {
+                            window.location.href = "home";
+                        }
+                    });
 
                 } else if (response.status == "failed") {
                     $("#btn").button('reset');
 
-                    document.getElementById("notif").innerHTML = "<div class='alert alert-danger' id='notifGagal'></div>";
-                    document.getElementById("notifGagal").innerHTML = response.msg;
+                    toast.error(response.msg, '', {
+                        timeOut: 3000,
+                        preventDuplicates: true,
+                    });
                 }
             },
             error: function () {
                 $("#btn").button('reset');
 
-                document.getElementById("notif").innerHTML = "<div class='alert alert-danger'>Terjadi masalah saat login, silahkan coba lagi.</div>";
+                toastr.error('Terjadi masalah pada sistem', '', {
+                    timeOut: 3000,
+                    preventDuplicates: true
+                });
             }
         })
     })
