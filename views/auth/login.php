@@ -9,8 +9,6 @@
                         </div>
                         <h5 class="font-weight-light text-center">Masuk | PeduliDiri</h5>
                         <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
-                            <div id="notif">
-                            </div>
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onwheel="this.blur()" autocomplete="off" required autofocus>
                             </div>
