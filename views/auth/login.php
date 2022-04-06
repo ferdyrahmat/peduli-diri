@@ -10,7 +10,7 @@
                         <h5 class="font-weight-light text-center">Masuk - PeduliDiri </h5>
                         <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
                             <div class="form-group">
-                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
+                                <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-lg" name="nama" id="nama" placeholder="Nama Lengkap" readonly>
