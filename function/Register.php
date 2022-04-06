@@ -1,5 +1,7 @@
 <?php
 
+sleep('3');
+
 $nik = $_POST['nik'];
 $nama = $_POST['nama'];
 
@@ -28,7 +30,7 @@ if (isset($cek)) {
 
     $response = [
         'status'    => 'success',
-        'msg'       => 'Pendaftaran berhasil'
+        'msg'       => 'Pendaftaran berhasil, Silahkan login'
     ];
 
     echo json_encode($response);
