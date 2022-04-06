@@ -103,8 +103,7 @@ $(function () {
                     $("#btn").button('reset');
 
                     toast.error(response.msg, '', {
-                        timeOut: 3000,
-                        preventDuplicates: true,
+                        timeOut: 3000
                     });
                 }
             },
@@ -112,8 +111,7 @@ $(function () {
                 $("#btn").button('reset');
 
                 toastr.error('Terjadi masalah pada sistem', '', {
-                    timeOut: 3000,
-                    preventDuplicates: true
+                    timeOut: 3000
                 });
             }
         })
