@@ -5,9 +5,7 @@
 *  on 2 April 2022                
 *                                  
 *************************************/
-
 document.title = "PeduliDiri | Login";
-
 
 $('#btn').attr("disabled", true);
 
