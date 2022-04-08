@@ -30,22 +30,22 @@
                                 <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-edit-catatan" enctype="multipart/form-data" id="edit-catatan">
                                     <input type="hidden" name="id_catatan" value="<?= $pd['0'] ?>">
                                     <div class="form-group">
-                                        <label for="tanggal">Tanggal</label>
-                                        <input type="date" class="form-control" id="tanggal" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off">
+                                        <label for="datepicker">Tanggal</label>
+                                        <input class="form-control" id="datepicker" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off" readonly>
                                     </div>
                                     <div class="form-group">
                                         <label for="jam">Jam</label>
-                                        <input type="time" class="form-control" id="jam" name="jam" value="<?= $pd['3'] ?>" autocomplete="off">
+                                        <input type="time" class="form-control" id="jam" name="jam" value="<?= $pd['3'] ?>" autocomplete="off" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="lokasi">Lokasi</label>
-                                        <input type="text" class="form-control" id="lokasi" name="lokasi" value="<?= $pd['4'] ?>" placeholder="Masukan Lokasi" autocomplete="off">
+                                        <input type="text" class="form-control" id="lokasi" name="lokasi" value="<?= $pd['4'] ?>" placeholder="Masukan Lokasi" autocomplete="off" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="suhu">Suhu</label>
-                                        <input type="number" class="form-control" id="suhu" name="suhu" value="<?= $pd['5'] ?>" placeholder="Masukan Suhu" autocomplete="off">
+                                        <input type="number" class="form-control" id="suhu" name="suhu" value="<?= $pd['5'] ?>" placeholder="Masukan Suhu" autocomplete="off" required>
                                     </div>
-                                    <button type="submit" class="btn btn-info btn-block">Simpan Perubahan</button>
+                                    <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Perubahan</button>
                                 </form>
                     <?php
                             } else {
