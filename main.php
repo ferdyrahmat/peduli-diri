@@ -24,6 +24,7 @@ if (empty($_SESSION['IsLogged'])) {
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/vendors/jquery.skeleton.loader/dist/jquery.skeleton.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/animate.min.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/vendors/DataTables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/jquery-ui.css">
 
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/style.css">
     <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/favicon.png" />
@@ -59,6 +60,16 @@ if (empty($_SESSION['IsLogged'])) {
     <script src="http://localhost/peduli-diri-native/assets/js/logout.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/vendors/typed.js/lib/typed.js"></script>
     <script src="http://localhost/peduli-diri-native/assets/js/app.js"></script>
+    <script src="http://localhost/peduli-diri-native/assets/js/jquery-ui.js"></script>
+
+    <script>
+        $("#datepicker").datepicker({
+            inline: true,
+            dateFormat: "dd-mm-yy",
+            minDate: "-30d",
+            maxDate: new Date()
+        });
+    </script>
 
     <?php
     if ($_GET['page'] == 'home') { ?>
