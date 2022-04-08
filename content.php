@@ -18,6 +18,6 @@ switch ($_GET['page']) {
         break;
 
     default:
-        # code...
+        header("location: 404.html");
         break;
 }
