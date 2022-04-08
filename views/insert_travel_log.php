@@ -8,7 +8,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
-                    <form class="forms-sample" method="POST" action="proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
+                    <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
                             <label for="datepicker">Tanggal</label>
                             <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" required readonly>
