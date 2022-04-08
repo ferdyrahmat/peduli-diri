@@ -7,6 +7,22 @@
 *************************************/
 document.title = "PeduliDiri | Register";
 
+$('#btn').attr("disabled", true);
+
+document.getElementById("nikreg").addEventListener('input', checkNIK);
+
+/** Check NIK */
+function checkNIK() {
+    var nik = $("#nikreg").val();
+    var countNIK = nik.length;
+
+    if (countNIK < 16) {
+        $('#btn').attr("disabled", true);
+    } else if (countNIK == 16) {
+        $('#btn').attr("disabled", false);
+    }
+}
+
 $(function () {
     $('#register').submit(function (e) {
         e.preventDefault();
