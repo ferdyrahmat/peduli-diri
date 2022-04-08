@@ -10,8 +10,8 @@
                 <div class="card-body">
                     <form class="forms-sample" method="POST" action="proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
-                            <label for="tanggal">Tanggal</label>
-                            <input type="date" class="form-control" id="tanggal" name="tanggal" autocomplete="off" required>
+                            <label for="datepicker">Tanggal</label>
+                            <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="jam">Jam</label>
@@ -25,7 +25,7 @@
                             <label for="suhu">Suhu</label>
                             <input type="number" class="form-control" id="suhu" name="suhu" placeholder="Masukan Suhu" autocomplete="off" required>
                         </div>
-                        <button type="submit" class="btn btn-info btn-block">Simpan Catatan</button>
+                        <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Catatan</button>
                     </form>
                 </div>
             </div>
