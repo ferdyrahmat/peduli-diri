@@ -41,7 +41,7 @@
         foreach ($db as $value) {
             $pd = explode("|", $value);
             if ($pd['1'] == $nik) {
-                if ($pd['2'] == date('Y-m-d')) {
+                if ($pd['2'] == date('d-m-Y')) {
                     $totalPerjalananToday = $no++;
                 }
             }
