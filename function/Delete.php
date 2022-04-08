@@ -19,10 +19,10 @@ foreach ($db as $value) {
     }
 }
 
-$buka_file = file($file);
-unset($buka_file[$no]);
+$file_db = file($file);
+unset($file_db[$no]);
 
-file_put_contents($file, implode("", $buka_file));
+file_put_contents($file, implode("", $file_db));
 
 $response = [
     'status'     => 'success',
