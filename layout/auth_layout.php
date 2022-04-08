@@ -37,7 +37,7 @@ if (isset($_SESSION['IsLogged'])) {
             break;
 
         default:
-            # code...
+            header("location: 404.html");
             break;
     }
 
