@@ -7,6 +7,23 @@
 *************************************/
 document.title = "PeduliDiri | Edit Catatan Perjalanan";
 
+$("#btn").attr("disabled", true);
+
+document.getElementById("datepicker").addEventListener('input', checkTanggal);
+
+function checkTanggal() {
+    var tanggal = $("#datepicker").val();
+    var count = tanggal.length;
+
+    if (count < 1) {
+        $("#btn").attr("disabled", true);
+    } else {
+        $("#btn").attr("disabled", false);
+    }
+}
+
+setInterval(checkTanggal);
+
 $(function () {
     $('#edit-catatan').submit(function (e) {
         e.preventDefault();
