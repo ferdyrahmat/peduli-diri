@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-ErrorDocument 404 masuk
+ErrorDocument 404 http://localhost/peduli-diri-native/404.html
 
 RewriteRule ^masuk$ views/auth/index.php?page=masuk [L]
 RewriteRule ^cek-nik$ function/Check.php [L]
