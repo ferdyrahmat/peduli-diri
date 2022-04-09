@@ -5,7 +5,6 @@
 *  on 5 April 2022                
 *                                  
 *************************************/
-
 $('#logout').on('click', function (e) {
     e.preventDefault();
 
@@ -20,7 +19,15 @@ $('#logout').on('click', function (e) {
         cancelButtonText: 'Tidak, Batalkan',
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = $(this).attr('href');
+            Swal.fire({
+                title: 'Berhasil',
+                text: 'Anda telah berhasil logout!',
+                icon: 'success',
+                showConfirmButton: false,
+                timer: 2000
+            }).then(function () {
+                window.location.href = "keluar";
+            })
         }
     })
 })
