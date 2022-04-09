@@ -50,7 +50,7 @@ function checkNIK() {
                 }
             },
             error: function () {
-                console.log("error nih bangg");
+                console.log("Error Bosku");
             }
         })
     }
