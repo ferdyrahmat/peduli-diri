@@ -7,20 +7,19 @@ $nik = $_SESSION['nik'];
 $file = "../database/catatan_perjalanan.txt";
 
 $db = file($file, FILE_IGNORE_NEW_LINES);
-
+$no = 0;
 foreach ($db as $value) {
     $pd = explode("|", $value);
+    $no++;
     if ($id_catatan == $pd['0']) {
         if ($nik == $pd['1']) {
-            $no = $pd['0'] - 1;
-        } else {
-            echo "<script>location.href='../catatan-perjalanan';</script>";
+            $line = $no - 1;
         }
     }
 }
 
 $file_db = file($file);
-unset($file_db[$no]);
+unset($file_db[$line]);
 
 file_put_contents($file, implode("", $file_db));
 
