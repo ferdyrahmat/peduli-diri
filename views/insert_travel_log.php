@@ -23,7 +23,7 @@
                         </div>
                         <div class="form-group">
                             <label for="suhu">Suhu</label>
-                            <input type="number" class="form-control" id="suhu" name="suhu" placeholder="Masukan Suhu" autocomplete="off" required>
+                            <input type="number" class="form-control" id="suhu" name="suhu" max="40" placeholder="Masukan Suhu" autocomplete="off" required>
                         </div>
                         <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Catatan</button>
                     </form>
