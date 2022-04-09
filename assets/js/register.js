@@ -47,6 +47,7 @@ $(function () {
                     toastr.info(response.msg, '', {
                         timeOut: 3000,
                         preventDuplicates: true,
+                        progressBar: true,
 
                         onHidden: function () {
                             window.location.href = "masuk";
