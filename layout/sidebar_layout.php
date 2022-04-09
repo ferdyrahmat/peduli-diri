@@ -31,6 +31,12 @@
                 <span class="menu-title">Tambah Catatan</span>
             </a>
         </li>
+        <li class="nav-item mt-2">
+            <a class="nav-link" href="#" onclick="alert('Maaf nih, Halaman tersebut belum siap:(')">
+                <i class="fa fa-file menu-icon"></i>
+                <span class="menu-title">Laporan</span>
+            </a>
+        </li>
         <li class="nav-item mt-4">
             <a class="nav-link" href="keluar" id="logout">
                 <i class="fa fa-sign-out menu-icon"></i>
