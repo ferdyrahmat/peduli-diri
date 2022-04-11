@@ -24051,7 +24051,7 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 60px);
-  background: #4a91dc;
+  background: #4e8ed9;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   padding: 0;
@@ -24345,13 +24345,14 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper {
-  background: #4a91dc;
+  background: #4e8ed9;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
   -ms-transition: width 0.25s ease, background 0.25s ease;
   width: 240px;
   height: 60px;
+  box-shadow: 0px 3px 21px 0px rgb(0 0 0 / 10%);
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand {
