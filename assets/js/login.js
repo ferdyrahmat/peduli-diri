@@ -47,10 +47,16 @@ function checkNIK() {
                     document.getElementById("nama").classList.add('animated', 'fadeInUp');
 
                     document.getElementById("nama").value = response.nama;
+                } else if (response.status == "failed") {
+                    toastr.error(response.msg, '', {
+                        timeOut: 3000
+                    });
                 }
             },
             error: function () {
-                console.log("Error Bosku");
+                toastr.error('Terjadi masalah pada sistem', '', {
+                    timeOut: 3000
+                });
             }
         })
     }
@@ -101,7 +107,7 @@ $(function () {
                 } else if (response.status == "failed") {
                     $("#btn").button('reset');
 
-                    toast.error(response.msg, '', {
+                    toastr.error(response.msg, '', {
                         timeOut: 3000
                     });
                 }
