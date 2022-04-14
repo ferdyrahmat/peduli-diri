@@ -1,9 +1,9 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="user-profile">
         <div class="user-image">
-            <img src="http://localhost/peduli-diri-native/assets/images/default-user-icon.jpg">
+            <img src="http://localhost/peduli-diri-native/assets/images/user.jpg">
         </div>
-        <div class="user-name">
+        <div class="user-name" style="text-transform: uppercase;">
             <?= $_SESSION['nama']; ?>
         </div>
         <div class="user-designation">
