@@ -31,7 +31,7 @@
                                     <input type="hidden" name="id_catatan" value="<?= $pd['0'] ?>">
                                     <div class="form-group">
                                         <label for="datepicker">Tanggal</label>
-                                        <input class="form-control" id="datepicker" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off" readonly>
+                                        <input class="form-control" id="datepicker" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off" style="background-color: #ffffff; cursor: default;" readonly>
                                     </div>
                                     <div class="form-group">
                                         <label for="jam">Jam</label>
