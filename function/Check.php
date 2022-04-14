@@ -14,7 +14,7 @@ foreach ($db as $data) {
     }
 }
 
-if ($cek) {
+if (isset($cek)) {
     $response = [
         'status'    => 'success',
         'nama'      => $nama
@@ -24,6 +24,7 @@ if ($cek) {
 } else {
     $response = [
         'status'   => 'failed',
+        'msg'      => 'NIK yang kamu masukan tidak terdaftar'
     ];
 
     echo json_encode($response);
