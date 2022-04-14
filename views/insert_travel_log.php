@@ -8,10 +8,16 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-body">
+                    <div class="alert alert-info">
+                        <p class="font-weight-bold" style="font-size: 18px;">Informasi</p>
+                        <ol>
+                            <li>Anda hanya dapat memilih tanggal perjalanan 30 hari ke belakang dan tidak dapat memilih tanggal lebih dari tanggal hari ini</li>
+                        </ol>
+                    </div>
                     <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
                             <label for="datepicker">Tanggal</label>
-                            <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" required readonly>
+                            <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" style="background-color: #ffffff; cursor: default;" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="jam">Jam</label>
