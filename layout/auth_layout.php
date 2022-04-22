@@ -21,12 +21,11 @@ if (isset($_SESSION['IsLogged'])) {
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/animate.min.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/style.css">
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/vendors/toastr/build/toastr.min.css">
-    <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/icon_app.png" />
 </head>
 
 <body>
     <?php
-
     switch ($_GET['page']) {
         case 'masuk':
             include "login.php";
@@ -40,7 +39,6 @@ if (isset($_SESSION['IsLogged'])) {
             header("location: 404.html");
             break;
     }
-
     ?>
 
     <script src="http://localhost/peduli-diri-native/assets/vendors/base/vendor.bundle.base.js"></script>
@@ -51,7 +49,6 @@ if (isset($_SESSION['IsLogged'])) {
     <script src="http://localhost/peduli-diri-native/assets/vendors/toastr/build/toastr.min.js"></script>
 
     <?php
-
     if ($_GET['page'] == 'masuk') {
     ?>
         <script src="assets/js/login.js"></script>
