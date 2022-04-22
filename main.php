@@ -27,7 +27,7 @@ if (empty($_SESSION['IsLogged'])) {
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/jquery-ui.css">
 
     <link rel="stylesheet" href="http://localhost/peduli-diri-native/assets/css/style.css">
-    <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="http://localhost/peduli-diri-native/assets/images/icon_app.png" />
 </head>
 
 <body>
