@@ -46,6 +46,14 @@ $(function () {
                     }).then(function () {
                         window.location = response.redirect;
                     })
+                } else if (response.status == "failed") {
+                    Swal.fire({
+                        title: 'Peringatan',
+                        text: response.msg,
+                        icon: 'error',
+                        showConfirmButton: false,
+                        timer: 3000
+                    })
                 }
             },
             error: function () {
