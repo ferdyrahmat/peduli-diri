@@ -21,17 +21,38 @@ foreach ($db as $value) {
     $pd = explode("|", $value);
 
     $id = $pd['0'] + 1;
+
+    if ($nik == $pd['1']) {
+        if ($tanggal == $pd['2']) {
+            if ($jam == $pd['3']) {
+                if ($lokasi == $pd['4']) {
+                    if ($suhu == $pd['5']) {
+                        $validation = true;
+                    }
+                }
+            }
+        }
+    }
 }
 
-$data = $id . "|" . $nik . "|" . $tanggal . "|" . $jam . "|" . $lokasi . "|" . $suhu . "\n";
+if (isset($validation)) {
+    $response = [
+        'status'    => 'failed',
+        'msg'       => 'Tidak dapat menyimpan catatan, Catatan ini sudah ada didatabase!'
+    ];
 
-fwrite($fh, $data);
-fclose($fh);
+    echo json_encode($response);
+} else {
+    $data = $id . "|" . $nik . "|" . $tanggal . "|" . $jam . "|" . $lokasi . "|" . $suhu . "\n";
 
-$response = [
-    'status'    => 'success',
-    'msg'       => 'Catatan berhasil ditambahkan!',
-    'redirect'  => 'catatan-perjalanan'
-];
+    fwrite($fh, $data);
+    fclose($fh);
 
-echo json_encode($response);
+    $response = [
+        'status'    => 'success',
+        'msg'       => 'Catatan berhasil ditambahkan!',
+        'redirect'  => 'catatan-perjalanan'
+    ];
+
+    echo json_encode($response);
+}
