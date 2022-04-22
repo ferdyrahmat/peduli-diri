@@ -3,11 +3,12 @@
         <div class="content-wrapper d-flex align-items-center auth px-0">
             <div class="row w-100 mx-0">
                 <div class="col-lg-4 mx-auto">
-                    <div class="auth-form-light text-center py-5 px-4 px-sm-5">
+                    <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                         <div class="brand-logo">
-                            <img src="assets/images/pedulidiri-auth.png" alt="logo">
+                            <img src="assets/images/icon_auth.png" alt="logo" style="width: 154px; margin-bottom: -20px;">
                         </div>
-                        <h5 class="font-weight-light text-center">Masuk - PeduliDiri </h5>
+                        <h4>Welcome,</h4>
+                        <h6 class="font-weight-light">Silahkan login untuk melanjutkan.</h6>
                         <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
