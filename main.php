@@ -74,6 +74,7 @@ if (empty($_SESSION['IsLogged'])) {
     <?php
     if ($_GET['page'] == 'home') { ?>
         <script src="http://localhost/peduli-diri-native/assets/js/home.js"></script>
+        <script src="http://localhost/peduli-diri-native/assets/js/visited.js"></script>
     <?php
     } else if ($_GET['page'] == 'catatan-perjalanan') { ?>
         <script src="http://localhost/peduli-diri-native/assets/js/travel-log.js"></script>
