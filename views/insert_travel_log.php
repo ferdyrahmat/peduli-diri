@@ -12,6 +12,7 @@
                         <p class="font-weight-bold" style="font-size: 18px;">Informasi</p>
                         <ol>
                             <li>Anda hanya dapat memilih tanggal perjalanan 30 hari ke belakang dan tidak dapat memilih tanggal lebih dari tanggal hari ini</li>
+                            <li>Tidak dapat menambahkan kembali data perjalanan yang sudah anda tambahkan sebelumnya</li>
                         </ol>
                     </div>
                     <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
@@ -29,7 +30,7 @@
                         </div>
                         <div class="form-group">
                             <label for="suhu">Suhu</label>
-                            <input type="number" class="form-control" id="suhu" name="suhu" max="40" placeholder="Masukan Suhu" autocomplete="off" required>
+                            <input type="number" class="form-control" id="suhu" name="suhu" max="40" step="any" placeholder="Masukan Suhu" autocomplete="off" required>
                         </div>
                         <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Catatan</button>
                     </form>
