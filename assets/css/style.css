@@ -25220,4 +25220,20 @@ input[type=number] {
   display: none;
 }
 
+ul li#dataTravel_previous.paginate_button.page-item.previous.disabled {
+  cursor: not-allowed;
+}
+
+ul li#dataTravel_next.paginate_button.page-item.next.disabled {
+  cursor: not-allowed;
+}
+
+ul li#dataTravelFV_previous.paginate_button.page-item.previous.disabled {
+  cursor: not-allowed;
+}
+
+ul li#dataTravelFV_next.paginate_button.page-item.next.disabled {
+  cursor: not-allowed;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
