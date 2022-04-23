@@ -4,7 +4,7 @@
             <div class="alert alert-light font-weight-bold text-dark">
                 <i class="fa fa-info"></i> Data Lokasi yang sering dikunjungi oleh Anda
             </div>
-            <table class="table table-bordered table-striped" id="example">
+            <table class="table table-bordered table-striped" id="dataTravelFV">
                 <thead>
                     <tr>
                         <th>Lokasi</th>
@@ -97,6 +97,6 @@
 
 <script>
     $(document).ready(function() {
-        $('#example').DataTable();
+        $('#dataTravelFV').DataTable();
     });
 </script>
