@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="suhu">Suhu</label>
-                                        <input type="number" class="form-control" id="suhu" name="suhu" value="<?= $pd['5'] ?>" placeholder="Masukan Suhu" autocomplete="off" required>
+                                        <input type="number" class="form-control" id="suhu" name="suhu" step="any" value="<?= $pd['5'] ?>" placeholder="Masukan Suhu" autocomplete="off" required>
                                     </div>
                                     <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Perubahan</button>
                                 </form>
