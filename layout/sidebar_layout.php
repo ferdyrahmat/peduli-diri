@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="user-profile">
         <div class="user-image">
-            <img src="http://localhost/peduli-diri-native/assets/images/user.jpg">
+            <img src="assets/images/user.jpg">
         </div>
         <div class="user-name" style="text-transform: uppercase;">
             <?= $_SESSION['nama']; ?>
@@ -12,27 +12,25 @@
     </div>
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="http://localhost/peduli-diri-native/home">
+            <a class="nav-link" href="home">
                 <i class="fa fa-home menu-icon"></i>
                 <span class="menu-title">Home</span>
             </a>
         </li>
-        <li class="nav-item mt-2 <?php if ($_GET['page'] == 'edit-catatan') {
-                                        echo "active";
-                                    } ?>">
-            <a class="nav-link" href="http://localhost/peduli-diri-native/catatan-perjalanan">
+        <li class="nav-item mt-2">
+            <a class="nav-link" href="catatan-perjalanan">
                 <i class="fa fa-book menu-icon"></i>
                 <span class="menu-title">Catatan Perjalanan</span>
             </a>
         </li>
         <li class="nav-item mt-2">
-            <a class="nav-link" href="http://localhost/peduli-diri-native/tambah-catatan">
+            <a class="nav-link" href="tambah-catatan">
                 <i class="fa fa-plus-square menu-icon"></i>
                 <span class="menu-title">Tambah Catatan</span>
             </a>
         </li>
         <li class="nav-item mt-2">
-            <a class="nav-link" href="#" onclick="alert('Maaf nih, Halaman tersebut belum siap:(')">
+            <a class="nav-link" href="laporan">
                 <i class="fa fa-file menu-icon"></i>
                 <span class="menu-title">Laporan</span>
             </a>
