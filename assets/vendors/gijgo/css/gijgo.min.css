@@ -2170,7 +2170,8 @@ ul.gj-list-md li.disabled>[data-role=wrapper]>[data-role=expander] {
     display: flex;
     align-items: baseline;
     user-select: none;
-    justify-content: center
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
 }
 
 .gj-picker.timepicker [role=header] div {
@@ -2206,7 +2207,8 @@ ul.gj-list-md li.disabled>[data-role=wrapper]>[data-role=expander] {
     position: relative;
     background: #eee;
     border-radius: 50%;
-    margin: 10px
+    margin: 10px;
+    font-family: 'Karla', sans-serif;
 }
 
 .gj-picker-md .arrow-begin,
