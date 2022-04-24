@@ -7,20 +7,20 @@
 *************************************/
 $("#btn").attr("disabled", true);
 
-document.getElementById("datepicker").addEventListener('input', checkTanggal);
+function validate() {
+    if ($('#datepicker').val().length > 0 &&
+        $('#jam').val().length > 0 &&
+        $('#lokasi').val().length > 0 &&
+        $('#suhu').val().length > 0) {
 
-function checkTanggal() {
-    var tanggal = $("#datepicker").val();
-    var count = tanggal.length;
-
-    if (count < 1) {
-        $("#btn").attr("disabled", true);
-    } else {
         $("#btn").attr("disabled", false);
+    }
+    else {
+        $("#btn").attr("disabled", true);
     }
 }
 
-setInterval(checkTanggal);
+setInterval(validate);
 
 $(function () {
     $('#edit-catatan').submit(function (e) {
