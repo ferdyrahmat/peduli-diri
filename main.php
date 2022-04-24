@@ -82,9 +82,6 @@ if (empty($_SESSION['IsLogged'])) {
     } else if ($_GET['page'] == 'tambah-catatan') { ?>
         <script src="http://localhost/peduli-diri-native/assets/js/insert.js"></script>
     <?php
-    } else if ($_GET['page'] == 'edit-catatan') { ?>
-        <script src="http://localhost/peduli-diri-native/assets/js/update.js"></script>
-    <?php
     }
     ?>
 </body>
