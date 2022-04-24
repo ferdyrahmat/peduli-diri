@@ -5,24 +5,22 @@
 *  on 5 April 2022                
 *                                  
 *************************************/
-document.title = "PeduliDiri | Tambah Catatan Perjalanan";
+document.title = "PeduliDiri - Tambah Catatan Perjalanan";
 
-$("#btn").attr("disabled", true);
+function validate() {
+    if ($('#datepicker').val().length > 0 &&
+        $('#jam').val().length > 0 &&
+        $('#lokasi').val().length > 0 &&
+        $('#suhu').val().length > 0) {
 
-document.getElementById("datepicker").addEventListener('input', checkTanggal);
-
-function checkTanggal() {
-    var tanggal = $("#datepicker").val();
-    var count = tanggal.length;
-
-    if (count < 1) {
-        $("#btn").attr("disabled", true);
-    } else {
         $("#btn").attr("disabled", false);
+    }
+    else {
+        $("#btn").attr("disabled", true);
     }
 }
 
-setInterval(checkTanggal);
+setInterval(validate);
 
 $(function () {
     $('#tambah-catatan').submit(function (e) {
