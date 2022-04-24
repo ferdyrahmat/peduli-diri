@@ -90,11 +90,14 @@
     function search($data, $data2)
     {
         for ($K = 0; $K < count($data2); $K++) {
-            $key['1'] = $data2[$K];
-            $key['2'] = searchData($data, $data2[$K]);
+            $key[] = searchData($data, $data2[$K]);
         }
-        if ($key['2'] >= 2) {
-            showTable(true);
+
+        foreach ($key as $value) {
+            if ($value >= 2) {
+                showTable(true);
+                break;
+            }
         }
     }
 
