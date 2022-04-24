@@ -22739,7 +22739,7 @@ select.form-control,
 select.typeahead,
 select.tt-query,
 select.tt-hint {
-  padding: .4375rem .75rem;
+  /* padding: .4375rem .75rem; */
   border: 0;
   outline: 1px solid #e4e6f6;
   color: #666666;
@@ -25234,6 +25234,10 @@ ul li#dataTravelFV_previous.paginate_button.page-item.previous.disabled {
 
 ul li#dataTravelFV_next.paginate_button.page-item.next.disabled {
   cursor: not-allowed;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  height: 34px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
