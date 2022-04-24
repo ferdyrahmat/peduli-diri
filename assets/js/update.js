@@ -5,8 +5,6 @@
 *  on 5 April 2022                
 *                                  
 *************************************/
-document.title = "PeduliDiri | Edit Catatan Perjalanan";
-
 $("#btn").attr("disabled", true);
 
 document.getElementById("datepicker").addEventListener('input', checkTanggal);
