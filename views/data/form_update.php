@@ -17,11 +17,11 @@ foreach ($db as $value) {
                 <input type="hidden" name="id_catatan" value="<?= $pd['0'] ?>">
                 <div class="form-group">
                     <label for="datepicker">Tanggal</label>
-                    <input class="form-control" id="datepicker" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off" style="background-color: #ffffff; cursor: default;" readonly>
+                    <input class="form-control" id="datepicker" name="tanggal" value="<?= $pd['2'] ?>" autocomplete="off" style="background-color: #ffffff; cursor: pointer;" readonly>
                 </div>
                 <div class="form-group">
                     <label for="jam">Jam</label>
-                    <input type="time" class="form-control" id="jam" name="jam" value="<?= $pd['3'] ?>" autocomplete="off" required>
+                    <input class="form-control" id="jam" name="jam" value="<?= $pd['3'] ?>" autocomplete="off" style="background-color: #ffffff; cursor: pointer; font-weight: 400; font-family: Karla, sans-serif;" readonly>
                 </div>
                 <div class="form-group">
                     <label for="lokasi">Lokasi</label>
@@ -47,6 +47,10 @@ foreach ($db as $value) {
         minDate: "-30d",
         maxDate: new Date()
     });
+</script>
+
+<script>
+    $('#jam').timepicker();
 </script>
 
 <script src="http://localhost/peduli-diri-native/assets/js/update.js"></script>
