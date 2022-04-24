@@ -5,7 +5,7 @@
 *  on 5 April 2022                
 *                                  
 *************************************/
-document.title = "PeduliDiri | Catatan Perjalanan";
+document.title = "PeduliDiri - Catatan Perjalanan";
 
 var instance = $('#loadDataTravel').scheletrone({
     url: "data-travel",
