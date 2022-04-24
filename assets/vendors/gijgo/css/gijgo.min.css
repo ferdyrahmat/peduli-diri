@@ -336,7 +336,8 @@ ul.gj-list-md li.disabled>[data-role=wrapper]>[data-role=display] {
 .gj-picker-md [role=footer] button.gj-button-md {
     color: #2196f3;
     font-weight: 700;
-    font-size: 13px
+    font-size: 13px;
+    font-family: 'Karla', sans-serif;
 }
 
 .gj-picker-bootstrap {
