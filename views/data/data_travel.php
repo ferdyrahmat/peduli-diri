@@ -27,11 +27,8 @@
                     <td><?= $pd['2']; ?></td>
                     <td><?= $pd['3']; ?></td>
                     <td><?= $pd['4']; ?></td>
-                    <td><?= $pd['5']; ?></td>
+                    <td><?= $pd['5']; ?> °C</td>
                     <td>
-                        <!-- <a href="edit-catatan/<?= $pd['0'] ?>" class="btn btn-info btn-sm">
-                            <i class="fa fa-edit"></i>
-                        </a> -->
                         <a href="" data-toggle="modal" data-target="#editModal" data-id="<?= $pd['0'] ?>" class="btn btn-info btn-sm">
                             <i class="fa fa-edit"></i>
                         </a>
@@ -75,6 +72,8 @@
     $(document).ready(function() {
         $('#editModal').on('show.bs.modal', function(e) {
 
+            document.title = "PeduliDiri - Edit Catatan Perjalanan";
+
             var id = $(e.relatedTarget).data('id');
 
             $.ajax({
@@ -85,6 +84,10 @@
                     $('.form').html(data);
                 }
             });
+        });
+
+        $('#editModal').on('hidden.bs.modal', function(e) {
+            document.title = "PeduliDiri - Catatan Perjalanan";
         });
     });
 </script>
