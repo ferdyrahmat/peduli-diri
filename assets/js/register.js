@@ -5,7 +5,7 @@
 *  on 6 April 2022                
 *                                  
 *************************************/
-document.title = "PeduliDiri | Register";
+document.title = "PeduliDiri - Register";
 
 $('#btn').attr("disabled", true);
 
