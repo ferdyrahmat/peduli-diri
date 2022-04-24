@@ -31,7 +31,7 @@ foreach ($db as $value) {
 $response = [
     'status'    => 'success',
     'msg'       => 'Catatan perjalanan berhasil di ubah',
-    'redirect'  => '../catatan-perjalanan'
+    'redirect'  => 'catatan-perjalanan'
 ];
 
 echo json_encode($response);
