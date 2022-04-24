@@ -143,7 +143,7 @@
             </div>
     <?php
         } else {
-            echo "NOOO";
+            //
         }
     }
     ?>
