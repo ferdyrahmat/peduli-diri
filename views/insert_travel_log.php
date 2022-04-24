@@ -13,16 +13,18 @@
                         <ol>
                             <li>Anda hanya dapat memilih tanggal perjalanan 30 hari ke belakang dan tidak dapat memilih tanggal lebih dari tanggal hari ini</li>
                             <li>Tidak dapat menambahkan kembali data perjalanan yang sudah anda tambahkan sebelumnya</li>
+                            <li>Format jam terbagi menjadi 2 yaitu <b>AM</b> dan <b>PM</b>. <b>AM</b> untuk 00:00 - 11:59, <b>PM</b> untuk 12:00 - 23:59</li>
+                            <li>Suhu tubuh harus berupa Celcius (°C)</li>
                         </ol>
                     </div>
                     <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
                             <label for="datepicker">Tanggal</label>
-                            <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" style="background-color: #ffffff; cursor: default;" placeholder="Masukan Tanggal" required readonly>
+                            <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" style="background-color: #ffffff; cursor: pointer;" placeholder="Masukan Tanggal" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="jam">Jam</label>
-                            <input type="time" class="form-control" id="jam" name="jam" autocomplete="off" required>
+                            <input class="form-control" id="jam" name="jam" autocomplete=" off" style="background-color: #ffffff; cursor: pointer; font-weight: 400; font-family: Karla, sans-serif;" placeholder="Masukan Jam" required readonly>
                         </div>
                         <div class="form-group">
                             <label for="lokasi">Lokasi</label>
