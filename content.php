@@ -17,6 +17,10 @@ switch ($_GET['page']) {
         include "views/update_travel_log.php";
         break;
 
+    case 'laporan':
+        include "views/laporan.php";
+        break;
+
     default:
         header("location: 404.html");
         break;
