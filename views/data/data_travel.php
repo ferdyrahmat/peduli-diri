@@ -9,6 +9,7 @@
             <th>Jam</th>
             <th>Lokasi</th>
             <th>Suhu</th>
+            <th>Keterangan</th>
             <th>Aksi</th>
         </tr>
     </thead>
@@ -31,6 +32,18 @@
                     <td><?= $pd['3']; ?></td>
                     <td><?= $pd['4']; ?></td>
                     <td><?= $pd['5']; ?> °C</td>
+                    <td>
+                        <?php
+                        if ($pd['5'] >= '36.1' && $pd['5'] <= '37.2') {
+                            echo "<span class='text-info font-weight-bold'>Suhu tubuh normal</span>";
+                        } else if ($pd['5'] >= '37.3' && $pd['5'] <= '38') {
+                            echo "<span class='text-danger font-weight-bold'>Suhu tubuh tidak normal</span>";
+                        } else if ($pd['5'] > '38') {
+                            echo "<span class='text-danger font-weight-bold'>Suhu tubuh tinggi, segera periksakan diri ke dokter</span>";
+                        } else {
+                            echo "<span class='text-danger font-weight-bold'>Suhu tubuh rendah</span>";
+                        }
+                        ?></td>
                     <td>
                         <a href="" data-toggle="modal" data-target="#editModal" data-id="<?= $pd['0'] ?>" class="btn btn-info btn-sm">
                             <i class="fa fa-edit"></i>
