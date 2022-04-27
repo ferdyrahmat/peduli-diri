@@ -29,7 +29,7 @@ foreach ($db as $value) {
                 </div>
                 <div class="form-group">
                     <label for="suhu">Suhu</label>
-                    <input type="number" class="form-control" id="suhu" name="suhu" step="any" value="<?= $pd['5'] ?>" placeholder="Masukan Suhu" autocomplete="off" required>
+                    <input type="number" class="form-control" id="suhu" name="suhu" step="any" min="30" max="40" value="<?= $pd['5'] ?>" onKeyPress="if(this.value.length==4) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" placeholder="Masukan Suhu" autocomplete="off" required>
                 </div>
                 <hr>
                 <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Perubahan</button>
