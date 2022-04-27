@@ -17,7 +17,7 @@
                             <li>Suhu tubuh harus berupa Celcius (°C)</li>
                         </ol>
                     </div>
-                    <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
+                    <form class="forms-sample" method="POST" action="proses-tambah-catatan" enctype="multipart/form-data" id="tambah-catatan">
                         <div class="form-group">
                             <label for="datepicker">Tanggal</label>
                             <input class="form-control" id="datepicker" name="tanggal" autocomplete="off" style="background-color: #ffffff; cursor: pointer;" placeholder="Masukan Tanggal" required readonly>
