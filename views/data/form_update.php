@@ -13,7 +13,7 @@ foreach ($db as $value) {
     if ($pd['0'] == $id_catatan) {
         if ($pd['1'] == $nik) {
 ?>
-            <form class="forms-sample" method="POST" action="http://localhost/peduli-diri-native/proses-edit-catatan" enctype="multipart/form-data" id="edit-catatan">
+            <form class="forms-sample" method="POST" action="proses-edit-catatan" enctype="multipart/form-data" id="edit-catatan">
                 <input type="hidden" name="id_catatan" value="<?= $pd['0'] ?>">
                 <div class="form-group">
                     <label for="datepicker">Tanggal</label>
@@ -53,4 +53,4 @@ foreach ($db as $value) {
     $('#jam').timepicker();
 </script>
 
-<script src="http://localhost/peduli-diri-native/assets/js/update.js"></script>
+<script src="assets/js/update.js"></script>
