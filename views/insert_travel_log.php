@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="suhu">Suhu</label>
-                            <input type="number" class="form-control" id="suhu" name="suhu" min="30" max="40" step="any" placeholder="Masukan Suhu" autocomplete="off" required>
+                            <input type="number" class="form-control" id="suhu" name="suhu" min="30" max="40" step="any" onKeyPress="if(this.value.length==4) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" placeholder="Masukan Suhu" autocomplete="off" required>
                         </div>
                         <button type="submit" class="btn btn-info btn-block" id="btn">Simpan Catatan</button>
                     </form>
