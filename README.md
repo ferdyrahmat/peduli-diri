@@ -1,2 +1,2 @@
 # Peduli Diri
- Aplikasi PeduliDiri PHP Native tanpa menggunakan Database
+ Aplikasi PeduliDiri (Catatan Perjalanan) PHP Native tanpa menggunakan Database
