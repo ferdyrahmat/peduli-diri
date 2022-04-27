@@ -1,3 +1,6 @@
+<div class="text-right mb-2" style="margin-top: -16px;">
+    <a href="print" target="_blank" class="btn btn-warning btn-sm text-white"><i class="fa fa-print"></i> Cetak Laporan</a>
+</div>
 <table class="table table-striped table-bordered" style="width: 100%;" id="dataTravel">
     <thead>
         <tr>
@@ -92,4 +95,4 @@
     });
 </script>
 
-<script src="http://localhost/peduli-diri-native/assets/js/delete.js"></script>
+<script src="assets/js/delete.js"></script>
