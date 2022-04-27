@@ -14,7 +14,7 @@ RewriteRule ^menu$ menu.php [L]
 RewriteRule ^catatan-perjalanan$ main.php?page=catatan-perjalanan [L]
 RewriteRule ^tambah-catatan$ main.php?page=tambah-catatan [L]
 RewriteRule ^edit-catatan/(.*)$ main.php?page=edit-catatan&id=$1 [L]
-RewriteRule ^laporan$ main.php?page=laporan [L]
+RewriteRule ^print$ views/print.php [L]
 
 RewriteRule ^proses-tambah-catatan$ function/Insert.php [L]
 RewriteRule ^proses-edit-catatan$ function/Update.php [L]
