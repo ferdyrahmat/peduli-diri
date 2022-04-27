@@ -25,10 +25,13 @@ foreach ($db as $value) {
     if ($nik == $pd['1']) {
         if ($tanggal == $pd['2']) {
             if ($jam == $pd['3']) {
-                if ($lokasi == $pd['4']) {
-                    if ($suhu == $pd['5']) {
-                        $validation = true;
-                    }
+                $validation = true;
+                $msg = 'Tidak dapat menyimpan catatan, Tanggal dan Jam yang kamu masukan sudah ada didatabase!';
+            }
+            if ($lokasi == $pd['4']) {
+                if ($suhu == $pd['5']) {
+                    $validation = true;
+                    $msg = 'Tidak dapat menyimpan catatan, Catatan ini sudah ada didatabase!';
                 }
             }
         }
@@ -38,7 +41,7 @@ foreach ($db as $value) {
 if (isset($validation)) {
     $response = [
         'status'    => 'failed',
-        'msg'       => 'Tidak dapat menyimpan catatan, Catatan ini sudah ada didatabase!'
+        'msg'       => $msg
     ];
 
     echo json_encode($response);
