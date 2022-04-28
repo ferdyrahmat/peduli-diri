@@ -7,8 +7,8 @@
                         <div class="brand-logo">
                             <img src="assets/images/icon_auth.png" alt="logo" style="width: 154px; margin-bottom: -20px;">
                         </div>
-                        <h4>New here?</h4>
-                        <h6 class="font-weight-light">Signing up is easy. It only takes a few steps</h6>
+                        <h4 class="font-weight-light text-dark">Pendaftaran</h4>
+                        <h6 class="font-weight-light text-dark">Silahkan lakukan pendaftaran untuk melanjutkan menggunakan Aplikasi ini.</h6>
                         <form class="pt-3" action="proses-daftar" method="POST" enctype="multipart/form-data" id="register">
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nikreg" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
@@ -19,10 +19,14 @@
                             <div class="mt-3">
                                 <button class="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn" id="btn" data-loading-text="<i class='fa fa-spinner fa-spin '></i> Harap Tunggu">Daftar</button>
                             </div>
-                            <div class="text-center mt-4 font-weight-light">
-                                Sudah mempunyai akun ? <a href="masuk" class="text-info">Masuk Sekarang</a>
-                            </div>
                         </form>
+                        <div class="text-center mt-4 font-weight-light">
+                            Sudah mempunyai akun ? <a href="masuk" class="text-info">Masuk Sekarang</a>
+                        </div>
+                        <hr>
+                        <div class="text-center font-weight-light" style="margin-bottom: -20px;">
+                            <a href="https://github.com/ferdyrahmat/peduli-diri" style="color: black;" target="_blank"><i class="fa fa-github" style="font-size: 32px;"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
