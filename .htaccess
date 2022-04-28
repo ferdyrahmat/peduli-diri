@@ -1,7 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-ErrorDocument 404 http://localhost/peduli-diri-native/404.html
-
 RewriteRule ^masuk$ views/auth/index.php?page=masuk [L]
 RewriteRule ^cek-nik$ function/Check.php [L]
 RewriteRule ^proses-masuk$ function/Login.php [L]
@@ -13,7 +11,6 @@ RewriteRule ^home$ main.php?page=home [L]
 RewriteRule ^menu$ menu.php [L]
 RewriteRule ^catatan-perjalanan$ main.php?page=catatan-perjalanan [L]
 RewriteRule ^tambah-catatan$ main.php?page=tambah-catatan [L]
-RewriteRule ^edit-catatan/(.*)$ main.php?page=edit-catatan&id=$1 [L]
 RewriteRule ^print$ views/print.php [L]
 
 RewriteRule ^proses-tambah-catatan$ function/Insert.php [L]
