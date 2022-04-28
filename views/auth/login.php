@@ -7,8 +7,8 @@
                         <div class="brand-logo">
                             <img src="assets/images/icon_auth.png" alt="logo" style="width: 154px; margin-bottom: -20px;">
                         </div>
-                        <h4>Welcome,</h4>
-                        <h6 class="font-weight-light">Silahkan login untuk melanjutkan.</h6>
+                        <h4 class="font-weight-light text-dark">Masuk</h4>
+                        <h6 class="font-weight-light text-dark">Silahkan masuk menggunakan akun yang telah terdaftar.</h6>
                         <form class="pt-3" method="POST" action="proses-masuk" id="login" enctype="multipart/form-data">
                             <div class="form-group">
                                 <input type="number" class="form-control form-control-lg" name="nik" id="nik" placeholder="Nomor Induk Kependudukan" onKeyPress="if(this.value.length==16) return false;" onpaste="return false" oncut="return false" oncopy="return false" ondrag="return false" ondrop="return false" onwheel="this.blur()" autocomplete="off" required autofocus>
@@ -22,6 +22,10 @@
                         </form>
                         <div class="text-center mt-4 font-weight-light">
                             Belum mempunyai akun ? <a href="daftar" class="text-info">Daftar Sekarang</a>
+                        </div>
+                        <hr>
+                        <div class="text-center font-weight-light" style="margin-bottom: -20px;">
+                            <a href="https://github.com/ferdyrahmat/peduli-diri" style="color: black;" target="_blank"><i class="fa fa-github" style="font-size: 32px;"></i></a>
                         </div>
                     </div>
                 </div>
