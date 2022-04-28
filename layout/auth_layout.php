@@ -14,8 +14,7 @@ if (isset($_SESSION['IsLogged'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PeduliDiri</title>
-    <!-- Base href -->
-    <base href="https://app-pedulidiri.herokuapp.com/">
+    <!-- CSS -->
     <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="assets/vendors/base/vendor.bundle.base.css">
